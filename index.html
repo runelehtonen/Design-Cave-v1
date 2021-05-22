@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Forside | Designcave</title>
+    <meta name="description" content="Designcave landingpage">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+        <header class="lp-header">
+            <a href="/"><img class="navbar-brand" src="img/logo.png" alt="HomePage"></a>
+            <div class="toggle"></div>
+        </header>
+        <video src="video/Nested%20Sequence%2007.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Velkommen </h2>
+            <h3>til design cave</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            <a href="#">Gå til lookbook</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://fsc.org/en"><img src="img/fsc.png"></a></li>
+            <li><a href="https://global-standard.org/"><img src="img/gots.png"></a></li>
+            <li><a href="https://certifications.controlunion.com/en/certification-programs/certification-programs/grs-global-recycle-standard"><img src="img/grs.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Om Design Cave</a></li>
+            <li><a href="#">Kontakt Os</a></li>
+        </ul>
+    </div>
+    <div class="filler"></div>
+    <main>
+       <div class="colorbar"></div>
+        <div class="info-landingpage">
+            <h3>Vi glæder os til samarbejdet.</h3>
+            <p>Christina &amp; Peter Mauritzen Holvad <br> Ejere</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-right">
+            <p>©Copyright 2019 - Design Cave IVS</p>
+        </div>
+        <div class="footer-left">
+            <a href="/"><img class="navbar-brand" src="img/logo-footer.png" alt="HomePage"></a>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('lp-active');
+            showcase.classList.toggle('lp-active');
+        })
+    </script>
+
+</body></html>
