@@ -1,25 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
+<!-- HEAD -->
+
 <head>
+    <meta charset="utf-8">
+    <title>Om os | Designcave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Designcave landingpage">
+    <meta name="author" content="SitePoint">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- BODY -->
 
 <body>
     <header class="header">
+        <!-- NAV-->
         <nav class="navbar">
-            <a href="/"><img class="navbar-brand" src="img/logo.png" alt="HomePage"></a>
+            <a href="index.html"><img class="navbar-brand" src="img/logo.png" alt="HomePage"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Forside</a>
+                    <a href="index.html" class="nav-link">Forside</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Produkter</a>
+                    <a href="lookbook.html" class="nav-link">Produkter</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Om Design Cave</a>
+                    <a href="Om-os.html" class="nav-link">Om Design Cave</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Kontakt Os</a>
+                    <a href="Kontakt.html" class="nav-link">Kontakt Os</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -29,34 +46,61 @@
             </div>
         </nav>
     </header>
-<div class="flex-container-cards">
-    <div class="card">
-        <img src="/img/Christian.png" alt="Avatar" style="width:100%">
-        <div class="container">
-            <h4><b>Peter Holvad</b> <span>CEO &amp; Stifter</span></h4>
-
-            <p>Peter har i 9 år arbejdet som indkøbschef i Salling Group, været Brand Manager i Bestseller og har haft ledende roller i flere virksomheder. De mange år på ledende poster hos nogle af de mest professionelle danske detailvirksomheder, har givet en stor forståelse for vigtigheden af, at produkterne passer til forretningens prisniveau og profil, at produkterne er tænkt helt igennem i forhold til håndtering og butik og ikke mindst, at produkterne bliver leveret til den aftalte tid.</p>
+    <main class="main-omos">
+        <div class="overskrift-omos">
+            <h2>Mød Peter, ejer af DesignCave</h2>
         </div>
-    </div>
+        <!-- Video og infographic -->
+        <div class="vid-wrapper">
+            <div class="video-container">
+                <div class="iframe-container">
+                    <iframe src="video/Peter%20Holvad.mp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+                </div>
+                <div class="vid-text">
+                    <h3>Vores vision er klar:</h3>
+                    <p>Vi vil være detailhandlens foretrukne leverandør og partner indenfor bæredygtige non food produkter, ved altid at kunne tilbyde- eller udvikle - højaktuelle produkter til markedets bedste priser.</p>
+                </div>
+            </div>
 
-
-    <div class="card">
-        <img src="/img/Christina.png" alt="Avatar" style="width:100%">
-        <div class="container">
-            <h4><b>Christina Holvad</b> <span>CEO &amp; Stifter</span></h4>
-
-            <p>Christina har hele sit liv haft en stor passion for interiør og boligindretning. Christina har boet i både Rom, Barcelona og New York, hvor hun har hentet masser af inspiration. Hun har stået for indretning og salgsklargøring, af flere større ejendomme og står i DESIGN CAVE som garant for, at sortimentet til enhver tid er helt på forkant med tidens tendenser</p>
+            <!-- <div class="infographic-container">
+                <img src="img/infographic.png"> 
+            </div> -->
         </div>
-    </div>
-    </div>
+        <!-- Person kort -->
+        <div class="flex-container-cards">
+            <div class="card" id="left-card">
+                <div class="card_img">
+                    <img src="img/Peter.png" alt="Avatar" style="width:100%">
+                </div>
+                <div class="container">
+                    <h4><b>Peter Holvad</b> <span>CEO &amp; Stifter</span></h4>
+
+                    <p>Peter har i 9 år arbejdet som indkøbschef i Salling Group, været Brand Manager i Bestseller og har haft ledende roller i flere virksomheder. <br> <br> De mange år på ledende poster hos nogle af de mest professionelle danske detailvirksomheder, har givet en stor forståelse for vigtigheden af, at produkterne passer til forretningens prisniveau og profil. <br> <br>Produkterne er tænkt helt igennem i forhold til håndtering og butik og ikke mindst, at produkterne bliver leveret til den aftalte tid.</p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="card" id="right-card">
+                <div class="card_img">
+                    <img src="img/Christina1.png" alt="Avatar" style="width:100%">
+                </div>
+                <div class="container">
+                    <h4><b>Christina Holvad</b> <span>CEO &amp; Stifter</span></h4>
+
+                    <p>Christina har hele sit liv haft en stor passion for interiør og boligindretning. Christina har boet i både Rom, Barcelona og New York, hvor hun har hentet masser af inspiration. <br> <br> Hun har stået for indretning og salgsklargøring, af flere større ejendomme og står i DESIGN CAVE som garant for, at sortimentet til enhver tid er helt på forkant med tidens tendenser</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
     <footer>
         <div class="footer-right">
             <p>©Copyright 2019 - Design Cave IVS</p>
         </div>
         <div class="footer-left">
-            <a href="/"><img class="navbar-brand" src="img/logo-footer.png" alt="HomePage"></a>
+            <a href="index.html"><img class="navbar-brand" src="img/logo-footer.png" alt="HomePage"></a>
         </div>
     </footer>
-
+    <!-- Eksternal javascript -->
     <script src="js/js.js"></script>
 </body></html>

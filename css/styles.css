@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+/* simpelt reset ---------------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -81,30 +81,42 @@
 .text {
     position: relative;
     z-index: 10;
+
 }
 
 .text h2 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 800;
     color: #a19899;
     line-height: 1em;
     text-transform: uppercase;
+    font-family: "Open Sans"
 }
 
 .text h3 {
     font-size: 4em;
     font-weight: 700;
-    color: #e8e3d2;
+    color: #f7f7f7;
     line-height: 1em;
     text-transform: uppercase;
+    padding-top: 8px
+}
+
+.text h3 span {
+    font-family: "PT serif";
+    letter-spacing: 7px;
+    font-size: 1.5em;
 }
 
 .text p {
     font-size: 1.1em;
+    letter-spacing: 1px;
+    line-height: 1.625;
     color: #fff;
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
+    font-family: "PT serif";
 }
 
 .text a {
@@ -115,6 +127,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
+    font-family: "Montserrat";
     margin-top: 10px;
     color: #fff;
     letter-spacing: 2px;
@@ -125,7 +138,7 @@
     letter-spacing: 6px;
 }
 
-.social {
+.cert {
     position: absolute;
     z-index: 10;
     bottom: 20px;
@@ -134,11 +147,11 @@
     align-items: center;
 }
 
-.social li {
+.cert li {
     list-style: none;
 }
 
-.social li a {
+.cert li a {
     display: inline-block;
     margin-right: 20px;
     filter: invert(0);
@@ -146,7 +159,7 @@
     transition: 0.5s;
 }
 
-.social li a:hover {
+.cert li a:hover {
     transform: scale(0.8) translateY(-15px);
 }
 
@@ -172,6 +185,7 @@
 .menu ul li a {
     text-decoration: none;
     font-size: 24px;
+    font-family: "Montserrat";
     color: #111;
 }
 
@@ -206,7 +220,7 @@
 
 .colorbar {
     height: 20px;
-    background-color: #a69a9a;
+    background-color: #a19899;
 }
 
 
@@ -217,22 +231,21 @@
     text-align: center;
     padding-top: 8vh;
     padding-bottom: 8vh;
-        background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 .info-landingpage h3 {
-    font-size: 2em;
-    font-weight: 700;
-    color: #a69a9a;
-    line-height: 1em;
+    font-size: 1.8em;
+    font-family: "open sans";
+    color: #a19899;
+    line-height: 1.625;
     text-transform: uppercase;
 }
 
 .info-landingpage p {
     font-size: 1.1em;
-    font-weight: 500;
-    letter-spacing: 1.1px;
-    margin-top: 5px;
+    font-family: "pt serif";
+    letter-spacing: 1px;
     color: #6c6d74;
     text-transform: uppercase;
 }
@@ -265,7 +278,8 @@ footer .logo {
 
 .footer-right p {
     text-decoration: none;
-    color: #a69a9a;
+    color: #a19899;
+    font-family: "pt serif";
 }
 
 
@@ -276,9 +290,11 @@ li {
 
 a {
     text-decoration: none;
+    font-family: "Montserrat";
+    text-transform: uppercase
 }
 
-.header{
+.header {
     border-bottom: 1px solid #E2E8F0;
 }
 
@@ -315,14 +331,14 @@ a {
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.2rem;
     font-weight: 400;
     color: #a19899;
 }
 
-.nav-link:hover{
-    color: #e8e3d2;
+.nav-link:hover {
+    color: #6c6d74;
 }
 
 .nav-logo {
@@ -334,7 +350,7 @@ a {
 
 
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1100px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -362,7 +378,7 @@ a {
         display: block;
         cursor: pointer;
     }
-    
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -376,8 +392,184 @@ a {
     }
 }
 
+/* Overskrift lookbook ----------------------------------------------------*/
+.overskrift-lookbook h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #a19899;
+    padding-top: 40px;
+    margin-bottom: -40px;
+    text-transform: uppercase;
+    font-family: "open sans";
+    letter-spacing: 1px;
+}
 
-/* Certificeringer -------------------------------------------------------- */
+/* lookbook ---------------------------------------------------------------- */
+#canvas {
+    width: 960px;
+    height: 600px;
+    margin: 100px auto;
+
+}
+
+#book-zoom {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+.animated {
+    -webkit-transition: margin-left 0.2s ease-in-out;
+    -moz-transition: margin-left 0.2s ease-in-out;
+    -o-transition: margin-left 0.2s ease-in-out;
+    -ms-transition: margin-left 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
+}
+
+.sample-docs {
+    margin-top: 20px;
+    width: 942px;
+    height: 600px;
+}
+
+.sample-docs .page {
+    width: 471px;
+    height: 600px;
+    background: white;
+
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sample-docs .hard {
+    background-image: url(../img/bookcover.jpg);
+}
+
+.sample-docs .p2 {
+    background-position: -471px 0;
+}
+
+.sample-docs .p28 {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image: linear-gradient(to right, #fff 95%, #dadada 100%);
+}
+
+.sample-docs .p29 {
+    background-position: -942px 0;
+}
+
+.sample-docs .p30 {
+    background-position: -1413px 0;
+}
+
+.sample-docs .even .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/right-border.png);
+    background-position: right top;
+    background-repeat: repeat-y;
+}
+
+.sample-docs .odd .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/left-border.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+}
+
+.sample-docs .page-wrapper {
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    perspective: 2000px;
+}
+
+
+.sample-docs .loader {
+    background-image: url(../img/loader.gif);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 280px;
+    left: 219px;
+}
+
+.sample-docs .shadow {
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
+
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -o-box-shadow: 0 0 20px #ccc;
+    -ms-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.sample-docs .tabs {
+    width: 942px;
+    height: 22px;
+    top: -22px;
+    position: relative;
+    z-index: 1;
+}
+
+.sample-docs .tabs > div {
+    width: 461px;
+    height: 22px;
+    float: left;
+}
+
+.sample-docs .tabs .left {
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+.sample-docs .tabs .right {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.sample-docs .tabs a {
+    color: black;
+    font: bold 11px arial;
+    color: #a19899;
+    line-height: 12px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.sample-docs .tabs .on,
+.sample-docs .tabs .on:hover {
+    cursor: default;
+}
+
+.sample-docs .tabs a:hover {
+    color: #6c6d74;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
 .certifikater-produktside {
     z-index: 10;
     bottom: 20px;
@@ -403,54 +595,269 @@ a {
 }
 
 
+
+/* Om Os  ---------------------------------------------------------*/
+main {
+    background-color: #f7f7f7;
+}
+
+/* Overskrift omos ----------------------------------------------------*/
+.overskrift-omos h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #a19899;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-family: "open sans";
+    letter-spacing: 1px;
+}
+
+/* Video ----------------------------------------------------*/
+.vid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.vid-text {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vid-text h3 {
+    color: #a19899;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    font-family: "open sans";
+    letter-spacing: 1px;
+}
+
+.vid-text p {
+    color: #6c6d74;
+    font-family: "pt serif";
+    letter-spacing: 1px;
+    line-height: 1.625;
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 70%;
+    padding-bottom: 39.42%;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+
+    .video-container {
+        width: 100%;
+    }
+
+    .iframe-container {
+        width: 100%;
+        padding-bottom: 56.3%;
+    }
+
+    .vid-text {
+        width: 100%;
+    }
+}
+
 /* Om Os Cards ---------------------------------------------------------*/
+.flex-container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+#left-card {
+    min-width: 500px;
+}
+
+#right-card {
+    min-width: 500px;
+}
+
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-    width: 50%;
-    display: block;
+    border-radius: 6px;
+    max-width: 600px;
+    margin-top: 60px;
+    flex: 1;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card_img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 60px auto 0;
 }
 
-/* Add some padding inside the card container */
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
 .container {
-  padding: 2px 16px;
-}
-
-.card img {
-    width: 40%;
-    max-width: 40%;   
+    padding: 20px 10px;
 }
 
 .card h4 {
-    color: #a69a9a;
+    color: #a19899;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: "open sans";
 }
 
 .card h4 span {
     display: block;
-    color: lightgray;
+    color: #a19899;
+    font-size: 1.1rem;
+    font-family: "open sans"
 }
 
+.card p {
+    color: #6c6d74;
+    font-family: "pt serif";
+    letter-spacing: 1px;
+    line-height: 1.625;
+}
 
+hr {
+    height: 635px;
+    margin-top: 100px;
+    width: 2px;
+    color: #a19899;
+}
 
+@media (max-width: 1260px) {
+    hr {
+        display: none;
+    }
+}
 
+/* Kontaktsiden -------------------------------------------------------*/
+.kontakt-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.kontakt-container-left a {
+    display: inline-block;
+    font-size: 1em;
+    background: #a19899;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: "montserrat";
+}
 
+#reverse-button {
+    display: inline-block;
+    font-size: 1em;
+    border: 2px solid #a19899;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #a19899;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: "montserrat";
+    margin-left: 10px;
+}
 
+.kontakt-container-left a:hover {
+    letter-spacing: 6px;
+}
 
+.kontakt-container-left {
+    width: 50%;
+    padding-left: 10%;
+}
 
+.kontakt-text {
+    padding-top: 23vh;
+    height: 77vh;
+}
 
+.kontakt-container-left p {
+    max-width: 80%;
+    font-family: "pt serif";
+    letter-spacing: 1px;
+    line-height: 1.625;
+    padding: 20px 0;
+}
 
+.kontakt-container-left p span {
+    display: block;
+    font-family: "open sans";
+    letter-spacing: 1px;
+    line-height: 1.625;
+}
 
+.kontakt-container-left h2 {
+    color: #a19899;
+    font-family: "open sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8em;
+}
 
+/* Kontaktsiden Map  -------------------------------------------------------*/
+.kontakt-container-right {
+    width: 50%;
+}
 
+.kontakt-container-right iframe {
+    width: 100%;
+    height: 77vh;
+}
 
+@media (max-width: 991px) {
 
+    .kontakt-container-left {
+        width: 100%;
+    }
 
+    .kontakt-container-right {
+        width: 100%;
+    }
 
-
+    .kontakt-text {
+        height: 33vh;
+        padding-top: 3vh;
+    }
+}

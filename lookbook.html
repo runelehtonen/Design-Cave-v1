@@ -1,30 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
+<!-- HEAD -->
+
 <head>
-    <script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-    <script type="text/javascript" src="../../extras/jquery-ui-1.8.20.custom.min.js"></script>
-    <script type="text/javascript" src="../../extras/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-    <script type="text/javascript" src="../../lib/hash.js"></script>
+    <meta charset="utf-8">
+    <title>Produkter | Designcave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Designcave landingpage">
+    <meta name="author" content="SitePoint">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="extras/jquery-ui-1.8.20.custom.min.js"></script>
+    <script src="extras/jquery.mousewheel.min.js"></script>
+    <script src="extras/modernizr.2.5.3.min.js"></script>
+    <script src="lib/hash.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- BODY -->
 
 <body>
     <header class="header">
+        <!-- NAV -->
         <nav class="navbar">
-            <a href="/"><img class="navbar-brand" src="img/logo.png" alt="HomePage"></a>
+            <a href="index.html"><img class="navbar-brand" src="img/logo.png" alt="HomePage"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Forside</a>
+                    <a href="index.html" class="nav-link">Forside</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Produkter</a>
+                    <a href="lookbook.html" class="nav-link">Produkter</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Om Design Cave</a>
+                    <a href="Om-os.html" class="nav-link">Om Design Cave</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Kontakt Os</a>
+                    <a href="Kontakt.html" class="nav-link">Kontakt Os</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -34,6 +51,10 @@
             </div>
         </nav>
     </header>
+    <!-- Lookbook -->
+    <div class="overskrift-lookbook">
+        <h2>Design Cave Lookbook 2021</h2>
+    </div>
     <section class="lookbook">
         <div id="canvas">
             <div id="book-zoom">
@@ -55,23 +76,25 @@
             </div>
         </div>
     </section>
+    <!-- Certifikater under lookbook -->
     <div class="certifikater">
         <ul class="certifikater-produktside">
-            <li><a href="https://fsc.org/en"><img src="img/fsc-brun.png"></a></li>
-            <li><a href="https://global-standard.org/"><img src="img/GOTS-brun.png"></a></li>
-            <li><a href="https://certifications.controlunion.com/en/certification-programs/certification-programs/grs-global-recycle-standard"><img src="img/GRS-brun.png"></a></li>
+            <li><a href="https://fsc.org/en"><img src="img/fsc-brun.png" alt="FSC logo"></a></li>
+            <li><a href="https://global-standard.org/"><img src="img/GOTS-brun.png" alt="GOTS logo"></a></li>
+            <li><a href="https://certifications.controlunion.com/en/certification-programs/certification-programs/grs-global-recycle-standard"><img src="img/GRS-brun.png" alt="GRS logo"></a></li>
         </ul>
     </div>
+    <!-- Footer -->
     <footer>
         <div class="footer-right">
-            <p>©Copyright 2019 - Design Cave IVS</p>
+            <p>&#169;Copyright 2019 - Design Cave IVS</p>
         </div>
         <div class="footer-left">
-            <a href="/"><img class="navbar-brand" src="img/logo-footer.png" alt="HomePage"></a>
+            <a href="index.html"><img class="navbar-brand" src="img/logo-footer.png" alt="HomePage"></a>
         </div>
     </footer>
 
-
+    <!-- Lookbook internal javascript -->
     <script type="text/javascript">
         function loadApp() {
 
@@ -124,7 +147,7 @@
 
             $("#slider").slider({
                 min: 1,
-                max: 100,
+                max: 30,
 
                 start: function(event, ui) {
                     if (!window._thumbPreview) {
@@ -304,11 +327,12 @@
 
         yepnope({
             test: Modernizr.csstransforms,
-            yep: ['../../lib/turn.min.js', 'css/jquery.ui.css'],
-            nope: ['../../lib/turn.html4.min.js', 'css/jquery.ui.html4.css'],
+            yep: ['lib/turn.min.js', 'css/jquery.ui.css'],
+            nope: ['lib/turn.html4.min.js', 'css/jquery.ui.html4.css'],
             both: ['css/docs.css', 'js/docs.js'],
             complete: loadApp
         });
     </script>
+    <!-- Eksternal javascript -->
     <script src="js/js.js"></script>
 </body></html>
